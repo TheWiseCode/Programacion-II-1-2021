@@ -1,0 +1,13 @@
+//---------------------------------------------------------------------------
+
+#ifndef NumerosH
+#define NumerosH
+//---------------------------------------------------------------------------
+#include <vcl>
+
+String repetir(Cardinal n, Cardinal v);
+String literal(Cardinal n);
+
+
+
+#endif

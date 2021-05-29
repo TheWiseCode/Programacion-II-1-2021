@@ -1,0 +1,13 @@
+//---------------------------------------------------------------------------
+
+#ifndef CadenasH
+#define CadenasH
+//---------------------------------------------------------------------------
+#include <vcl.h>
+
+void cortarPrimeraLetra(AnsiString &cad);
+void perteneceConjunto(String conjunto, char conjunto);
+void leerConjunto(String conjunto);
+
+
+#endif
