@@ -1,27 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2021/05/29 12:59:09.574,=C:\Users\willy\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>2021/05/29 12:59:09.934,=C:\Users\willy\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
-    <Transaction>2021/05/29 12:59:26.697,C:\Users\willy\Documents\Embarcadero\Studio\Projects\RecursionPCH1.h=C:\Users\willy\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>2021/05/29 12:59:26.706,C:\Users\willy\Documents\Embarcadero\Studio\Projects\Recursion.cbproj=C:\Users\willy\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
-    <Transaction>2021/05/29 12:59:29.629,C:\Users\willy\Documents\Embarcadero\Studio\Projects\Form.dfm=C:\Users\willy\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2021/05/29 12:59:29.629,C:\Users\willy\Documents\Embarcadero\Studio\Projects\Form.cpp=C:\Users\willy\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
-    <Transaction>2021/05/29 12:59:29.629,C:\Users\willy\Documents\Embarcadero\Studio\Projects\Form.h=C:\Users\willy\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
-    <Transaction>2021/05/29 12:59:39.840,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Form.dfm=C:\Users\willy\Documents\Embarcadero\Studio\Projects\Form.dfm</Transaction>
-    <Transaction>2021/05/29 12:59:39.840,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Form.cpp=C:\Users\willy\Documents\Embarcadero\Studio\Projects\Form.cpp</Transaction>
-    <Transaction>2021/05/29 12:59:39.840,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Form.h=C:\Users\willy\Documents\Embarcadero\Studio\Projects\Form.h</Transaction>
-    <Transaction>2021/05/29 12:59:42.525,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\RecursionPCH1.h=C:\Users\willy\Documents\Embarcadero\Studio\Projects\RecursionPCH1.h</Transaction>
-    <Transaction>2021/05/29 12:59:45.233,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Recursion.cbproj=C:\Users\willy\Documents\Embarcadero\Studio\Projects\Recursion.cbproj</Transaction>
-    <Transaction>2021/05/29 13:00:59.609,=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Unit1.cpp</Transaction>
-    <Transaction>2021/05/29 13:01:03.611,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Numeros.cpp=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Unit1.cpp</Transaction>
-    <Transaction>2021/05/29 13:01:03.611,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Numeros.h=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Unit1.h</Transaction>
-    <Transaction>2021/05/29 13:01:09.909,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Archivos\Numeros.cpp=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Numeros.cpp</Transaction>
-    <Transaction>2021/05/29 13:01:09.909,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Archivos\Numeros.h=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Numeros.h</Transaction>
-    <Transaction>2021/05/29 13:47:40.496,=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Unit1.cpp</Transaction>
-    <Transaction>2021/05/29 13:47:47.676,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Cadenas.h=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Unit1.h</Transaction>
-    <Transaction>2021/05/29 13:47:47.676,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Cadenas.cpp=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Unit1.cpp</Transaction>
-    <Transaction>2021/05/29 13:47:53.355,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Archivos\Cadenas.cpp=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Cadenas.cpp</Transaction>
-    <Transaction>2021/05/29 13:47:53.355,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Archivos\Cadenas.h=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Cadenas.h</Transaction>
+	<Transactions>
+    <Transaction>2021/05/29 12:59:09.000.574,=C:\Users\willy\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2021/05/29 12:59:09.000.934,=C:\Users\willy\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2021/05/29 12:59:26.000.697,C:\Users\willy\Documents\Embarcadero\Studio\Projects\RecursionPCH1.h=C:\Users\willy\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2021/05/29 12:59:26.000.706,C:\Users\willy\Documents\Embarcadero\Studio\Projects\Recursion.cbproj=C:\Users\willy\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2021/05/29 12:59:29.000.629,C:\Users\willy\Documents\Embarcadero\Studio\Projects\Form.h=C:\Users\willy\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2021/05/29 12:59:29.000.629,C:\Users\willy\Documents\Embarcadero\Studio\Projects\Form.cpp=C:\Users\willy\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2021/05/29 12:59:29.000.629,C:\Users\willy\Documents\Embarcadero\Studio\Projects\Form.dfm=C:\Users\willy\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/05/29 12:59:39.000.840,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Form.cpp=C:\Users\willy\Documents\Embarcadero\Studio\Projects\Form.cpp</Transaction>
+    <Transaction>2021/05/29 12:59:39.000.840,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Form.dfm=C:\Users\willy\Documents\Embarcadero\Studio\Projects\Form.dfm</Transaction>
+    <Transaction>2021/05/29 12:59:39.000.840,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Form.h=C:\Users\willy\Documents\Embarcadero\Studio\Projects\Form.h</Transaction>
+    <Transaction>2021/05/29 12:59:42.000.525,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\RecursionPCH1.h=C:\Users\willy\Documents\Embarcadero\Studio\Projects\RecursionPCH1.h</Transaction>
+    <Transaction>2021/05/29 12:59:45.000.233,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Recursion.cbproj=C:\Users\willy\Documents\Embarcadero\Studio\Projects\Recursion.cbproj</Transaction>
+    <Transaction>2021/05/29 13:00:59.000.609,=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Unit1.cpp</Transaction>
+    <Transaction>2021/05/29 13:01:03.000.611,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Numeros.h=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Unit1.h</Transaction>
+    <Transaction>2021/05/29 13:01:03.000.611,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Numeros.cpp=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Unit1.cpp</Transaction>
+    <Transaction>2021/05/29 13:01:09.000.909,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Archivos\Numeros.cpp=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Numeros.cpp</Transaction>
+    <Transaction>2021/05/29 13:01:09.000.909,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Archivos\Numeros.h=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Numeros.h</Transaction>
+    <Transaction>2021/05/29 13:47:40.000.496,=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Unit1.cpp</Transaction>
+    <Transaction>2021/05/29 13:47:47.000.676,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Cadenas.h=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Unit1.h</Transaction>
+    <Transaction>2021/05/29 13:47:47.000.676,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Cadenas.cpp=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Unit1.cpp</Transaction>
+    <Transaction>2021/05/29 13:47:53.000.355,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Archivos\Cadenas.cpp=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Cadenas.cpp</Transaction>
+    <Transaction>2021/05/29 13:47:53.000.355,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Archivos\Cadenas.h=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Cadenas.h</Transaction>
+    <Transaction>2021/05/29 22:43:25.333,=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Unit1.cpp</Transaction>
+    <Transaction>2021/05/29 22:43:29.526,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Vectores.h=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Unit1.h</Transaction>
+    <Transaction>2021/05/29 22:43:29.526,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Vectores.cpp=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Unit1.cpp</Transaction>
+    <Transaction>2021/05/29 22:43:41.202,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Archivos\Vectores.h=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Vectores.h</Transaction>
+    <Transaction>2021/05/29 22:43:41.202,D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Archivos\Vectores.cpp=D:\UAGRM\Trabajo Auxiliatura\Pro2 General\Recursion\Vectores.cpp</Transaction>
   </Transactions>
 </BorlandProject>

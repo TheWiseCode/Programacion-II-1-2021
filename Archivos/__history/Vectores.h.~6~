@@ -1,0 +1,12 @@
+// ---------------------------------------------------------------------------
+
+#ifndef VectoresH
+#define VectoresH
+// ---------------------------------------------------------------------------
+#include <vcl>
+#include <Vcl.Grids.hpp>
+
+// void invertir(int v[],int a, int b);
+void invertir(TStringGrid* v, int a, int b);
+
+#endif

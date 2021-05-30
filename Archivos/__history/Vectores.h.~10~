@@ -1,0 +1,14 @@
+// ---------------------------------------------------------------------------
+
+#ifndef VectoresH
+#define VectoresH
+// ---------------------------------------------------------------------------
+#include <vcl.h>
+#include <Vcl.Grids.hpp>
+
+// void invertir(int v[],int a, int b);
+void invertir(TStringGrid* v, int a, int b);
+void auxInsertionSort(TStringGrid* v, int i);
+void insertionSort(TStringGrid* v, int i);
+
+#endif

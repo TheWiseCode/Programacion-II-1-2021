@@ -75,3 +75,44 @@ bool esPalindrome(String cad) {
 	}
 	return res;
 }
+
+Cardinal posNum(String cad) {
+}
+
+Cardinal posLetra(String cad) {
+}
+
+Cardinal auxSumatoria(String cad) {
+	Cardinal s;
+	if (cad == "") {
+		s = 0;
+	}
+	else {
+		Cardinal pos = posNum(cad);
+		cad.Delete(1, pos);
+		Cardinal posL = posLetra(cad);
+		if (posL == 0)
+			posL = cad.Length();
+		String num = cad.SubString(1, posL);
+		s = StrToInt(num);
+		cad.Delete(1, posL);
+		s += auxSumatoria(cad);
+	}
+	return s;
+}
+
+Cardinal sumatoriaNumeros(String cad) {
+	Cardinal s;
+	if (cad == "") {
+		s = 0;
+	}
+	else {
+		Cardinal pos = cad.Pos(" ");
+		if (pos == 0)
+			pos = cad.Length();
+		String pal = cad.SubString(1, pos - 1);
+		String otra = cad.SubString(pos + 1, cad.Length() - pal.Length() - 1);
+		s = sumatoriaNumeros(otra) + auxSumatoria(pal);
+	}
+	return s;
+}
