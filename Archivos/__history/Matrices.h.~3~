@@ -1,0 +1,10 @@
+//---------------------------------------------------------------------------
+
+#ifndef MatricesH
+#define MatricesH
+//---------------------------------------------------------------------------
+#include <vcl.h>
+#include <Vcl.Grids.hpp>
+
+void cargarTodoFila(TStringGrid* m, Byte f, Byte c);
+#endif

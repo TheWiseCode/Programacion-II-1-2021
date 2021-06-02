@@ -104,7 +104,7 @@ bool ordenado(TStringGrid* v, int n) {
 		String sb = v->Cells[n - 1][0];
 		Cardinal a = StrToInt(sa);
 		Cardinal b = StrToInt(sb);
-		if(a > b)
+		if (a > b)
 			x = false;
 		else
 			x = ordenado(v, n - 1);
@@ -112,15 +112,51 @@ bool ordenado(TStringGrid* v, int n) {
 	return x;
 }
 
-/*
- void insertionSortIt(int v[], int n) {
- for (int i = 0; i < n; i++) {
- int j = i;
- while (j > 0 && v[j] < v[j - 1]) {
- int aux = v[j];
- v[j] = v[j - 1];
- v[j - 1] = aux;
- j--;
- }
- }
- } */
+Cardinal auxSumaDigitos(String cad) {
+	Cardinal s = 0;
+	if (cad.Length() > 0) {
+		char c = cad[1];
+		if (c >= '0' && c <= '9') {
+			s += (c - 48);
+		}
+		cad.Delete(1, 1);
+		s += auxSumaDigitos(cad);
+	}
+	return s;
+}
+
+Cardinal sumaDigitos(TStringGrid* v, Byte n) {
+	Cardinal s = 0;
+	if (n > 0) {
+		String cad = v->Cells[n - 1][0];
+		s = auxSumaDigitos(cad);
+		s += sumaDigitos(v, n - 1);
+	}
+	return s;
+}
+
+Cardinal posMayor(String cad) {
+	Cardinal p;
+	Word n = cad.Length();
+	if (n == 1) {
+		p = 1;
+	}
+	else {
+		char c = cad[n];
+		cad.Delete(n, 1);
+		p = posMayor(cad);
+		if (c > cad[p])
+			p = n;
+	}
+	return p;
+}
+
+void cargarOrdAsc(TStringGrid* v, String cad) {
+	if (cad.Length() > 0) {
+		Cardinal posMay = posMayor(cad);
+		char c = cad[posMay];
+		v->Cells[cad.Length() - 1][0] = c;
+		cad.Delete(posMay, 1);
+		cargarOrdAsc(v, cad);
+	}
+}

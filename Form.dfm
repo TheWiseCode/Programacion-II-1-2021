@@ -19,18 +19,11 @@ object Form1: TForm1
     Top = 0
     Width = 755
     Height = 445
-    ActivePage = TabSheet4
+    ActivePage = TabSheet5
     Align = alClient
     TabOrder = 0
-    ExplicitLeft = 248
-    ExplicitTop = 8
-    ExplicitWidth = 465
-    ExplicitHeight = 305
     object TabSheet1: TTabSheet
       Caption = 'Numeros'
-      ExplicitLeft = 0
-      ExplicitWidth = 457
-      ExplicitHeight = 277
       object Edit1: TEdit
         Left = 8
         Top = 8
@@ -61,20 +54,14 @@ object Form1: TForm1
     object TabSheet2: TTabSheet
       Caption = 'Series'
       ImageIndex = 1
-      ExplicitWidth = 457
-      ExplicitHeight = 277
     end
     object TabSheet3: TTabSheet
       Caption = 'Cadenas'
       ImageIndex = 2
-      ExplicitWidth = 457
-      ExplicitHeight = 277
     end
     object TabSheet4: TTabSheet
       Caption = 'Vectores'
       ImageIndex = 3
-      ExplicitWidth = 457
-      ExplicitHeight = 277
       object Vector: TStringGrid
         Left = 3
         Top = 16
@@ -114,17 +101,86 @@ object Form1: TForm1
         TabOrder = 2
         OnClick = Button1Click
       end
+      object Edit3: TEdit
+        Left = 3
+        Top = 112
+        Width = 121
+        Height = 24
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 3
+      end
     end
     object TabSheet5: TTabSheet
       Caption = 'Matrices'
       ImageIndex = 4
-      ExplicitWidth = 457
-      ExplicitHeight = 277
+      object Matriz: TStringGrid
+        Left = 3
+        Top = 3
+        Width = 414
+        Height = 390
+        DefaultColWidth = 35
+        DefaultRowHeight = 35
+        FixedCols = 0
+        FixedRows = 0
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+      end
+      object Edit4: TEdit
+        Left = 423
+        Top = 3
+        Width = 121
+        Height = 26
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        NumbersOnly = True
+        ParentFont = False
+        TabOrder = 1
+        Text = '5'
+        OnChange = Edit4Change
+      end
+      object Edit5: TEdit
+        Left = 423
+        Top = 35
+        Width = 121
+        Height = 26
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        NumbersOnly = True
+        ParentFont = False
+        TabOrder = 2
+        Text = '5'
+        OnChange = Edit5Change
+      end
+      object Button2: TButton
+        Left = 423
+        Top = 67
+        Width = 121
+        Height = 30
+        Caption = 'Limpiar'
+        TabOrder = 3
+        OnClick = Button2Click
+      end
     end
   end
   object MainMenu1: TMainMenu
-    Left = 32
-    Top = 376
+    Left = 448
+    Top = 384
     object Numeros1: TMenuItem
       Caption = 'Numeros'
       object Literal1: TMenuItem
@@ -172,6 +228,29 @@ object Form1: TForm1
       object Ordenado1: TMenuItem
         Caption = 'Ordenado'
         OnClick = Ordenado1Click
+      end
+      object Sumadigitos1: TMenuItem
+        Caption = 'Suma digitos'
+        OnClick = Sumadigitos1Click
+      end
+      object CargarOrdenadocadena1: TMenuItem
+        Caption = 'Cargar Ordenado cadena'
+        OnClick = CargarOrdenadocadena1Click
+      end
+    end
+    object Matrices: TMenuItem
+      Caption = 'Matrices'
+      object CargarTodoFila1: TMenuItem
+        Caption = 'Cargar Todo Fila'
+        OnClick = CargarTodoFila1Click
+      end
+      object CargarTodoCol1: TMenuItem
+        Caption = 'Cargar Todo Col'
+        OnClick = CargarTodoCol1Click
+      end
+      object DiagSecundarioInf1: TMenuItem
+        Caption = 'Diag Secundario Inf'
+        OnClick = DiagSecundarioInf1Click
       end
     end
   end

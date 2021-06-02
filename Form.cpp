@@ -96,4 +96,69 @@ void __fastcall TForm1::Ordenado1Click(TObject *Sender) {
 	else
 		ShowMessage("No Ordenado");
 }
+
+// ---------------------------------------------------------------------------
+void __fastcall TForm1::Sumadigitos1Click(TObject *Sender) {
+	Byte n = Vector->ColCount;
+	Cardinal suma = sumaDigitos(Vector, n);
+	ShowMessage("Suma de digitos: " + String(suma));
+}
+// ---------------------------------------------------------------------------
+
+void __fastcall TForm1::CargarOrdenadocadena1Click(TObject *Sender) {
+	String cad = Edit3->Text;
+	Vector->ColCount = cad.Length();
+	cargarOrdAsc(Vector, cad);
+}
+// ---------------------------------------------------------------------------
+
+void __fastcall TForm1::Edit4Change(TObject *Sender) {
+	if (Edit4->Text != "") {
+		Cardinal filas = StrToInt(Edit4->Text);
+		Matriz->RowCount = filas;
+	}
+}
+// ---------------------------------------------------------------------------
+
+void __fastcall TForm1::Edit5Change(TObject *Sender) {
+	if (Edit5->Text != "") {
+		Cardinal cols = StrToInt(Edit5->Text);
+		Matriz->ColCount = cols;
+	}
+}
+
+// ---------------------------------------------------------------------------
+void __fastcall TForm1::CargarTodoFila1Click(TObject *Sender) {
+	Cardinal v = 1;
+	Cardinal f = Matriz->RowCount;
+	Cardinal c = Matriz->ColCount;
+	cargarTodoFila(Matriz, f, c, v);
+}
+
+// ---------------------------------------------------------------------------
+void __fastcall TForm1::CargarTodoCol1Click(TObject *Sender) {
+	Cardinal v = 1;
+	Cardinal f = Matriz->RowCount;
+	Cardinal c = Matriz->ColCount;
+	cargarTodoCol(Matriz, f, c, v);
+}
+
+// ---------------------------------------------------------------------------
+void __fastcall TForm1::Button2Click(TObject *Sender) {
+	Cardinal f = Matriz->RowCount;
+	Cardinal c = Matriz->ColCount;
+	for (int i = 0; i < f; i++) {
+		for (int j = 0; j < c; j++) {
+			Matriz->Cells[j][i] = "";
+		}
+	}
+}
+
+// ---------------------------------------------------------------------------
+void __fastcall TForm1::DiagSecundarioInf1Click(TObject *Sender) {
+	Cardinal v = 1;
+	Cardinal f = Matriz->RowCount;
+	Cardinal c = Matriz->ColCount;
+	diag_sec_inf(Matriz, f, c, v);
+}
 // ---------------------------------------------------------------------------

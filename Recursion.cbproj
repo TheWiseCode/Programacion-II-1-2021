@@ -138,6 +138,10 @@
             <DependentOn>Archivos\Cadenas.h</DependentOn>
             <BuildOrder>4</BuildOrder>
         </CppCompile>
+        <CppCompile Include="Archivos\Matrices.cpp">
+            <DependentOn>Archivos\Matrices.h</DependentOn>
+            <BuildOrder>6</BuildOrder>
+        </CppCompile>
         <CppCompile Include="Archivos\Numeros.cpp">
             <DependentOn>Archivos\Numeros.h</DependentOn>
             <BuildOrder>3</BuildOrder>
