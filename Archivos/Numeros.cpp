@@ -82,3 +82,27 @@ void MoverFinal(Cardinal &n) {
 	Cardinal pos = PosMayor(n);
 	Recorrer(n, pos);
 }
+
+Cardinal suma_bin(Cardinal a, Cardinal b, Cardinal carry, Cardinal r) {
+	Cardinal sumaBin = 0;
+	if (a > 0 || b > 0 || carry > 0) {
+		Cardinal da = a % 10;
+		Cardinal db = b % 10;
+		Cardinal sum = da + db + carry;
+		if (sum == 2)
+			sum = 10;
+		else if (sum == 3)
+			sum = 11;
+		Cardinal dig = sum % 10;
+		carry = sum / 10;
+		Cardinal p = r * dig;
+		Cardinal bin = suma_bin(a / 10, b / 10, carry, r * 10);
+		sumaBin = bin + p;
+		// sumaBin = suma_bin(a / 10, b / 10, carry, r * 10) + (r * dig);
+	}
+	return sumaBin;
+}
+
+Cardinal suma_binarios(Cardinal a, Cardinal b) {
+	return suma_bin(a, b, 0, 1);
+}

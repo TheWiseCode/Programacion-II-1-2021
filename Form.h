@@ -56,6 +56,9 @@ __published: // IDE-managed Components
 	TMenuItem *CargarTodoCol1;
 	TButton *Button2;
 	TMenuItem *DiagSecundarioInf1;
+	TMenuItem *OrdBurbuja1;
+	TMenuItem *Cargarexterior1;
+	TMenuItem *Sumabinarios1;
 
 	void __fastcall Literal1Click(TObject *Sender);
 	void __fastcall CantidadParantesdeImpar1Click(TObject *Sender);
@@ -76,6 +79,9 @@ __published: // IDE-managed Components
 	void __fastcall CargarTodoCol1Click(TObject *Sender);
 	void __fastcall Button2Click(TObject *Sender);
 	void __fastcall DiagSecundarioInf1Click(TObject *Sender);
+	void __fastcall OrdBurbuja1Click(TObject *Sender);
+	void __fastcall Cargarexterior1Click(TObject *Sender);
+	void __fastcall Sumabinarios1Click(TObject *Sender);
 
 private: // User declarations
 public: // User declarations

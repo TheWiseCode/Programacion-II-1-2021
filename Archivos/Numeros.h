@@ -13,6 +13,6 @@ void Recorrer(Cardinal &n, Cardinal pos);
 Cardinal PosMayor(Cardinal n);
 void MoverFinal(Cardinal &n);
 
-
-
+Cardinal suma_bin(Cardinal a, Cardinal b, Cardinal carry,Cardinal r);
+Cardinal suma_binarios(Cardinal a, Cardinal b);
 #endif

@@ -161,4 +161,26 @@ void __fastcall TForm1::DiagSecundarioInf1Click(TObject *Sender) {
 	Cardinal c = Matriz->ColCount;
 	diag_sec_inf(Matriz, f, c, v);
 }
+
+// ---------------------------------------------------------------------------
+void __fastcall TForm1::OrdBurbuja1Click(TObject *Sender) {
+	Cardinal n = Vector->ColCount;
+	ord_burbuja(Vector, n);
+
+}
+
+// ---------------------------------------------------------------------------
+void __fastcall TForm1::Cargarexterior1Click(TObject *Sender) {
+	Cardinal f = Matriz->RowCount;
+	Cardinal c = Matriz->ColCount;
+	cargar_exterior(Matriz, 1, 1);
+}
+
+// ---------------------------------------------------------------------------
+void __fastcall TForm1::Sumabinarios1Click(TObject *Sender) {
+	Cardinal a = StrToInt(Edit1->Text);
+	Cardinal b = StrToInt(Edit2->Text);
+	Cardinal suma = suma_binarios(a, b);
+    ShowMessage("Suma: " + String(suma));
+}
 // ---------------------------------------------------------------------------

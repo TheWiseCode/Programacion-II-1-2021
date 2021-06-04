@@ -160,3 +160,22 @@ void cargarOrdAsc(TStringGrid* v, String cad) {
 		cargarOrdAsc(v, cad);
 	}
 }
+
+void burbujear(TStringGrid* v, Byte n) {
+	if (n > 1) {
+		burbujear(v, n - 1);
+		Cardinal izq = StrToInt(v->Cells[n - 2][0]);
+		Cardinal der = StrToInt(v->Cells[n - 1][0]);
+		if (izq < der) {
+			v->Cells[n - 2][0] = der;
+			v->Cells[n - 1][0] = izq;
+		}
+	}
+}
+
+void ord_burbuja(TStringGrid* v, Byte n) {
+	if (n > 0) {
+		burbujear(v, n);
+		ord_burbuja(v, n - 1);
+	}
+}

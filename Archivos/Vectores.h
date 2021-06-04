@@ -22,4 +22,8 @@ Cardinal sumaDigitos(TStringGrid* v, Byte n);
 
 Cardinal posMayor(String cad);
 void cargarOrdAsc(TStringGrid* v, String cad);
+
+
+void burbujear(TStringGrid* v, Byte n);
+void ord_burbuja(TStringGrid* v, Byte n);
 #endif
