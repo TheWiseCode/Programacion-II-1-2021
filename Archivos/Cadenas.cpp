@@ -76,43 +76,107 @@ bool esPalindrome(String cad) {
 	return res;
 }
 
-Cardinal posNum(String cad) {
+/* Cardinal auxSumatoria(String cad) {
+ Cardinal s;
+ if (cad == "") {
+ s = 0;
+ }
+ else {
+ Cardinal pos = posNum(cad);
+ cad.Delete(1, pos);
+ Cardinal posL = posLetra(cad);
+ if (posL == 0)
+ posL = cad.Length();
+ String num = cad.SubString(1, posL);
+ s = StrToInt(num);
+ cad.Delete(1, posL);
+ s += auxSumatoria(cad);
+ }
+ return s;
+ }
+
+ Cardinal sumatoriaNumeros(String cad) {
+ Cardinal s;
+ if (cad == "") {
+ s = 0;
+ }
+ else {
+ Cardinal pos = cad.Pos(" ");
+ if (pos == 0)
+ pos = cad.Length();
+ String pal = cad.SubString(1, pos - 1);
+ String otra = cad.SubString(pos + 1, cad.Length() - pal.Length() - 1);
+ s = sumatoriaNumeros(otra) + auxSumatoria(pal);
+ }
+ return s;
+ } */
+
+Cardinal posNoNum(String cad) {
+
 }
 
-Cardinal posLetra(String cad) {
-}
-
-Cardinal auxSumatoria(String cad) {
-	Cardinal s;
-	if (cad == "") {
-		s = 0;
-	}
+Cardinal posNum(String cad, bool num) {
+	Cardinal pos;
+	if (cad.Length() == 0)
+		pos = 0;
 	else {
-		Cardinal pos = posNum(cad);
-		cad.Delete(1, pos);
-		Cardinal posL = posLetra(cad);
-		if (posL == 0)
-			posL = cad.Length();
-		String num = cad.SubString(1, posL);
-		s = StrToInt(num);
-		cad.Delete(1, posL);
-		s += auxSumatoria(cad);
+		char c = cad[cad.Length()];
+		cad.Delete(cad.Length(), 1);
+		pos = posNum(cad, num);
+		if (pos == 0) {
+			if (num) {
+				if (c >= '0' && c <= '9')
+					pos = cad.Length() + 1;
+			}
+			else {
+				if (!(c >= '0' && c <= '9'))
+					pos = cad.Length() + 1;
+			}
+		}
 	}
-	return s;
+	return pos;
 }
 
-Cardinal sumatoriaNumeros(String cad) {
-	Cardinal s;
-	if (cad == "") {
-		s = 0;
+Cardinal mayor(String cad) {
+	Cardinal may;
+	if (cad.Length() == 0)
+		may = 0;
+	else {
+		Cardinal posA = posNum(cad, true);
+		Cardinal num;
+		if (posA > 0) {
+			cad.Delete(1, posA - 1);
+			Cardinal posB = posNum(cad, false);
+			if (posB == 0)
+				posB = cad.Length() + 1;
+			num = StrToInt(cad.SubString(1, posB - 1));
+			cad.Delete(1, posB - 1);
+		}
+		else {
+			num = 0;
+			cad = "";
+		}
+		may = mayor(cad);
+		if(num > may)
+            may = num;
 	}
+	return may;
+}
+
+Cardinal numMayor(String cad) {
+	Cardinal may;
+	if (cad.Length() == 0)
+		may = 0;
 	else {
 		Cardinal pos = cad.Pos(" ");
 		if (pos == 0)
-			pos = cad.Length();
+			pos = cad.Length() + 1;
 		String pal = cad.SubString(1, pos - 1);
-		String otra = cad.SubString(pos + 1, cad.Length() - pal.Length() - 1);
-		s = sumatoriaNumeros(otra) + auxSumatoria(pal);
+		cad.Delete(1, pos);
+		may = numMayor(cad);
+		Cardinal num = mayor(pal);
+		if (num > may)
+			may = num;
 	}
-	return s;
+	return may;
 }

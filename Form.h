@@ -59,6 +59,15 @@ __published: // IDE-managed Components
 	TMenuItem *OrdBurbuja1;
 	TMenuItem *Cargarexterior1;
 	TMenuItem *Sumabinarios1;
+	TMenuItem *SecInfAumento21;
+	TMenuItem *CargarFila11C1;
+	TMenuItem *Caracol1;
+	TMenuItem *Caracol21;
+	TMenuItem *Insertarv2v2p1;
+	TStringGrid *Vector1;
+	TEdit *Edit6;
+	TButton *Button3;
+	TMenuItem *Mayordeunacadena1;
 
 	void __fastcall Literal1Click(TObject *Sender);
 	void __fastcall CantidadParantesdeImpar1Click(TObject *Sender);
@@ -82,6 +91,13 @@ __published: // IDE-managed Components
 	void __fastcall OrdBurbuja1Click(TObject *Sender);
 	void __fastcall Cargarexterior1Click(TObject *Sender);
 	void __fastcall Sumabinarios1Click(TObject *Sender);
+	void __fastcall SecInfAumento21Click(TObject *Sender);
+	void __fastcall CargarFila11C1Click(TObject *Sender);
+	void __fastcall Caracol1Click(TObject *Sender);
+	void __fastcall Caracol21Click(TObject *Sender);
+	void __fastcall Insertarv2v2p1Click(TObject *Sender);
+	void __fastcall Button3Click(TObject *Sender);
+	void __fastcall Mayordeunacadena1Click(TObject *Sender);
 
 private: // User declarations
 public: // User declarations

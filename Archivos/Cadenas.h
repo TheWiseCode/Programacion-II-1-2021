@@ -13,5 +13,6 @@ Cardinal auxSumatoria(String cad);
 Cardinal sumatoriaNumeros(String cad);
 
 
-
+Cardinal mayor(String cad);
+Cardinal numMayor(String cad);
 #endif

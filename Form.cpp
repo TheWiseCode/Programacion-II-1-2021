@@ -181,6 +181,58 @@ void __fastcall TForm1::Sumabinarios1Click(TObject *Sender) {
 	Cardinal a = StrToInt(Edit1->Text);
 	Cardinal b = StrToInt(Edit2->Text);
 	Cardinal suma = suma_binarios(a, b);
-    ShowMessage("Suma: " + String(suma));
+	ShowMessage("Suma: " + String(suma));
+}
+
+// ---------------------------------------------------------------------------
+void __fastcall TForm1::SecInfAumento21Click(TObject *Sender) {
+	Cardinal f = Matriz->RowCount;
+	Cardinal c = Matriz->ColCount;
+	Cardinal v = 1;
+	cargar_matriz1(Matriz, f, c, v);
+}
+
+// ---------------------------------------------------------------------------
+void __fastcall TForm1::CargarFila11C1Click(TObject *Sender) {
+	Cardinal f = Matriz->RowCount;
+	Cardinal c = Matriz->ColCount;
+	cargar_matriz2(Matriz, f, c);
+}
+
+// ---------------------------------------------------------------------------
+void __fastcall TForm1::Caracol1Click(TObject *Sender) {
+	Cardinal f = Matriz->RowCount;
+	Cardinal c = Matriz->ColCount;
+	Cardinal v = 1;
+	caracol(Matriz, 1, f, 1, c, v);
 }
 // ---------------------------------------------------------------------------
+
+void __fastcall TForm1::Caracol21Click(TObject *Sender) {
+	Cardinal f = Matriz->RowCount;
+	Cardinal c = Matriz->ColCount;
+	Cardinal v = 1;
+	caracol2(Matriz, 1, f, 1, c, v);
+}
+
+// ---------------------------------------------------------------------------
+void __fastcall TForm1::Insertarv2v2p1Click(TObject *Sender) {
+	Cardinal p = StrToInt(InputBox("Titulo", "Posicion: ", "2"));
+	insertar(Vector1, Vector, p);
+}
+// ---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button3Click(TObject *Sender) {
+	String cad = Edit6->Text;
+	Byte len = StrToInt(cad);
+	Vector1->ColCount = len;
+}
+// ---------------------------------------------------------------------------
+void __fastcall TForm1::Mayordeunacadena1Click(TObject *Sender)
+{
+	String cad = InputBox("", "", "");
+	Cardinal may = numMayor(cad);
+    Edit6->Text = may;
+}
+//---------------------------------------------------------------------------
+

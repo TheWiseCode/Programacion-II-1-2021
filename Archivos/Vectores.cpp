@@ -179,3 +179,23 @@ void ord_burbuja(TStringGrid* v, Byte n) {
 		ord_burbuja(v, n - 1);
 	}
 }
+
+void recorrer(TStringGrid* v, Byte p, Byte n) {
+	if (p < n) {
+		v->Cells[n][0] = v->Cells[n - 1][0];
+		recorrer(v, p, n - 1);
+	}
+}
+
+void insertar_aux(TStringGrid* v2, TStringGrid* v1, Byte p, Byte i) {
+	if (i < v2->ColCount) {
+		v1->ColCount = v1->ColCount + 1;
+		recorrer(v1, p, v1->ColCount);
+		v1->Cells[p][0] = v2->Cells[i][0];
+		insertar_aux(v2, v1, p + 1, i + 1);
+	}
+}
+
+void insertar(TStringGrid* v2, TStringGrid* v1, Byte p) {
+	insertar_aux(v2, v1, p, 0);
+}

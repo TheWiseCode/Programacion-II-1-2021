@@ -26,4 +26,10 @@ void cargarOrdAsc(TStringGrid* v, String cad);
 
 void burbujear(TStringGrid* v, Byte n);
 void ord_burbuja(TStringGrid* v, Byte n);
+
+void recorrer(TStringGrid* v, Byte p, Byte n);
+void insertar_aux(TStringGrid* v2, TStringGrid* v1, Byte p, Byte i);
+void insertar(TStringGrid* v2, TStringGrid* v1, Byte p);
 #endif
+
+

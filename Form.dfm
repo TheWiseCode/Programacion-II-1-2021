@@ -19,11 +19,15 @@ object Form1: TForm1
     Top = 0
     Width = 755
     Height = 445
-    ActivePage = TabSheet1
+    ActivePage = TabSheet3
     Align = alClient
     TabOrder = 0
     object TabSheet1: TTabSheet
       Caption = 'Numeros'
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object Edit1: TEdit
         Left = 8
         Top = 8
@@ -54,14 +58,26 @@ object Form1: TForm1
     object TabSheet2: TTabSheet
       Caption = 'Series'
       ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
     end
     object TabSheet3: TTabSheet
       Caption = 'Cadenas'
       ImageIndex = 2
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
     end
     object TabSheet4: TTabSheet
       Caption = 'Vectores'
       ImageIndex = 3
+      ExplicitLeft = 8
+      ExplicitTop = 28
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object Vector: TStringGrid
         Left = 3
         Top = 16
@@ -114,10 +130,40 @@ object Form1: TForm1
         ParentFont = False
         TabOrder = 3
       end
+      object Vector1: TStringGrid
+        Left = 3
+        Top = 176
+        Width = 741
+        Height = 57
+        FixedCols = 0
+        RowCount = 1
+        FixedRows = 0
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing]
+        ParentFont = False
+        TabOrder = 4
+      end
+      object Button3: TButton
+        Left = 130
+        Top = 239
+        Width = 75
+        Height = 25
+        Caption = 'Dim'
+        TabOrder = 5
+        OnClick = Button3Click
+      end
     end
     object TabSheet5: TTabSheet
       Caption = 'Matrices'
       ImageIndex = 4
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object Matriz: TStringGrid
         Left = 3
         Top = 3
@@ -178,9 +224,22 @@ object Form1: TForm1
       end
     end
   end
+  object Edit6: TEdit
+    Left = 8
+    Top = 45
+    Width = 121
+    Height = 26
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+  end
   object MainMenu1: TMainMenu
-    Left = 448
-    Top = 384
+    Left = 672
+    Top = 328
     object Numeros1: TMenuItem
       Caption = 'Numeros'
       object Literal1: TMenuItem
@@ -214,6 +273,10 @@ object Form1: TForm1
         Caption = 'Es Palindrome'
         OnClick = EsPalindrome1Click
       end
+      object Mayordeunacadena1: TMenuItem
+        Caption = 'Mayor de una cadena'
+        OnClick = Mayordeunacadena1Click
+      end
     end
     object Vectores1: TMenuItem
       Caption = 'Vectores'
@@ -245,6 +308,10 @@ object Form1: TForm1
         Caption = 'Ord Burbuja'
         OnClick = OrdBurbuja1Click
       end
+      object Insertarv2v2p1: TMenuItem
+        Caption = 'Insertar v2 -> v2, p'
+        OnClick = Insertarv2v2p1Click
+      end
     end
     object Matrices: TMenuItem
       Caption = 'Matrices'
@@ -263,6 +330,21 @@ object Form1: TForm1
       object Cargarexterior1: TMenuItem
         Caption = 'Cargar exterior'
         OnClick = Cargarexterior1Click
+      end
+      object SecInfAumento21: TMenuItem
+        Caption = 'Sec Inf Aumento 2'
+        OnClick = SecInfAumento21Click
+      end
+      object CargarFila11C1: TMenuItem
+        Caption = 'Cargar Fila 1,1 -> C'
+      end
+      object Caracol1: TMenuItem
+        Caption = 'Caracol'
+        OnClick = Caracol1Click
+      end
+      object Caracol21: TMenuItem
+        Caption = 'Caracol 2'
+        OnClick = Caracol21Click
       end
     end
   end
