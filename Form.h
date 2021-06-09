@@ -68,6 +68,10 @@ __published: // IDE-managed Components
 	TEdit *Edit6;
 	TButton *Button3;
 	TMenuItem *Mayordeunacadena1;
+	TMenuItem *cargarfrase1;
+	TMenuItem *Cargarcadena1;
+	TMenuItem *Eliminarelemento1;
+	TMenuItem *Dona1;
 
 	void __fastcall Literal1Click(TObject *Sender);
 	void __fastcall CantidadParantesdeImpar1Click(TObject *Sender);
@@ -98,6 +102,10 @@ __published: // IDE-managed Components
 	void __fastcall Insertarv2v2p1Click(TObject *Sender);
 	void __fastcall Button3Click(TObject *Sender);
 	void __fastcall Mayordeunacadena1Click(TObject *Sender);
+	void __fastcall cargarfrase1Click(TObject *Sender);
+	void __fastcall Cargarcadena1Click(TObject *Sender);
+	void __fastcall Eliminarelemento1Click(TObject *Sender);
+	void __fastcall Dona1Click(TObject *Sender);
 
 private: // User declarations
 public: // User declarations

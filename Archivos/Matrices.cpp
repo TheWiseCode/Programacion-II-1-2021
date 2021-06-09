@@ -241,3 +241,39 @@ void caracol2(TStringGrid* m, Byte fa, Byte fb, Byte ca, Byte cb, Cardinal &v) {
 		caracol2(m, fa + 1, fb - 1, ca + 1, cb - 1, v);
 	}
 }
+
+void aux_cad(TStringGrid* m, String &cad, Byte f, Byte c) {
+	if (f <= m->RowCount && cad.Length() > 0) {
+		char x = cad[1];
+		cad.Delete(1, 1);
+		m->Cells[c - 1][f - 1] = x;
+		aux_cad(m, cad, f + 1, c);
+	}
+}
+
+void cargar_cad(TStringGrid* m, String &cad, Byte c) {
+	if (c <= m->ColCount) {
+		aux_cad(m, cad, 1, c);
+		cargar_cad(m, cad, c + 1);
+	}
+}
+
+void aux_dona(TStringGrid* m, Byte f, Byte c, Byte l, Cardinal v) {
+	if (c > l) {
+		int nf = m->RowCount;
+		int nc = m->RowCount;
+		m->Cells[c - 1][f - 1] = v;
+		m->Cells[f - 1][c - 1] = v;
+		m->Cells[nc - c][nf - f] = v;
+		m->Cells[nf - f][nc - c] = v;
+		aux_dona(m, f, c - 1, l, v);
+	}
+}
+
+void dona(TStringGrid* m, Byte f, Byte c, Cardinal v) {
+	if (f > m->RowCount / 2) {
+		Byte l = m->ColCount - c;
+		aux_dona(m, f, c, l, v);
+		dona(m, f - 1, c - 1, v + 1);
+	}
+}

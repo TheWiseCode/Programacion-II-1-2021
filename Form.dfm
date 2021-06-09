@@ -19,15 +19,11 @@ object Form1: TForm1
     Top = 0
     Width = 755
     Height = 445
-    ActivePage = TabSheet3
+    ActivePage = TabSheet5
     Align = alClient
     TabOrder = 0
     object TabSheet1: TTabSheet
       Caption = 'Numeros'
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object Edit1: TEdit
         Left = 8
         Top = 8
@@ -58,26 +54,27 @@ object Form1: TForm1
     object TabSheet2: TTabSheet
       Caption = 'Series'
       ImageIndex = 1
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
     end
     object TabSheet3: TTabSheet
       Caption = 'Cadenas'
       ImageIndex = 2
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
+      object Edit6: TEdit
+        Left = 16
+        Top = 14
+        Width = 121
+        Height = 26
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -15
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+      end
     end
     object TabSheet4: TTabSheet
       Caption = 'Vectores'
       ImageIndex = 3
-      ExplicitLeft = 8
-      ExplicitTop = 28
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object Vector: TStringGrid
         Left = 3
         Top = 16
@@ -160,10 +157,6 @@ object Form1: TForm1
     object TabSheet5: TTabSheet
       Caption = 'Matrices'
       ImageIndex = 4
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object Matriz: TStringGrid
         Left = 3
         Top = 3
@@ -223,19 +216,6 @@ object Form1: TForm1
         OnClick = Button2Click
       end
     end
-  end
-  object Edit6: TEdit
-    Left = 8
-    Top = 45
-    Width = 121
-    Height = 26
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-    TabOrder = 1
   end
   object MainMenu1: TMainMenu
     Left = 672
@@ -312,6 +292,14 @@ object Form1: TForm1
         Caption = 'Insertar v2 -> v2, p'
         OnClick = Insertarv2v2p1Click
       end
+      object cargarfrase1: TMenuItem
+        Caption = 'cargar_frase'
+        OnClick = cargarfrase1Click
+      end
+      object Eliminarelemento1: TMenuItem
+        Caption = 'Eliminar elemento'
+        OnClick = Eliminarelemento1Click
+      end
     end
     object Matrices: TMenuItem
       Caption = 'Matrices'
@@ -345,6 +333,14 @@ object Form1: TForm1
       object Caracol21: TMenuItem
         Caption = 'Caracol 2'
         OnClick = Caracol21Click
+      end
+      object Cargarcadena1: TMenuItem
+        Caption = 'Cargar cadena'
+        OnClick = Cargarcadena1Click
+      end
+      object Dona1: TMenuItem
+        Caption = 'Dona'
+        OnClick = Dona1Click
       end
     end
   end

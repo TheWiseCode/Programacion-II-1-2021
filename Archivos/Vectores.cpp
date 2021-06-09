@@ -199,3 +199,23 @@ void insertar_aux(TStringGrid* v2, TStringGrid* v1, Byte p, Byte i) {
 void insertar(TStringGrid* v2, TStringGrid* v1, Byte p) {
 	insertar_aux(v2, v1, p, 0);
 }
+
+void eliminar(TStringGrid* v, Cardinal p) {
+	if (p < v->ColCount) {
+		v->Cells[p][0] = v->Cells[p + 1][0];
+		eliminar(v, p + 1);
+	}
+}
+
+void eliminar_elemento(TStringGrid* v, Cardinal z, Cardinal n) {
+	if (n > 0) {
+		Cardinal num = StrToInt(v->Cells[n - 1][0]);
+		if (num == z) {
+			eliminar(v, n - 1);
+			v->ColCount -= 1;
+		}
+		else {
+			eliminar_elemento(v, z, n - 1);
+		}
+	}
+}

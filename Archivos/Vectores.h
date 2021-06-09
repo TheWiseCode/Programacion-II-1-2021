@@ -30,6 +30,9 @@ void ord_burbuja(TStringGrid* v, Byte n);
 void recorrer(TStringGrid* v, Byte p, Byte n);
 void insertar_aux(TStringGrid* v2, TStringGrid* v1, Byte p, Byte i);
 void insertar(TStringGrid* v2, TStringGrid* v1, Byte p);
+
+void eliminar(TStringGrid* v, Cardinal p);
+void eliminar_elemento(TStringGrid* v, Cardinal z, Cardinal n);
 #endif
 
 

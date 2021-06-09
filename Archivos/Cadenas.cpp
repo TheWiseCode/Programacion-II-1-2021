@@ -157,8 +157,8 @@ Cardinal mayor(String cad) {
 			cad = "";
 		}
 		may = mayor(cad);
-		if(num > may)
-            may = num;
+		if (num > may)
+			may = num;
 	}
 	return may;
 }
@@ -179,4 +179,18 @@ Cardinal numMayor(String cad) {
 			may = num;
 	}
 	return may;
+}
+
+void cargar_frase(String cad, TStringGrid* v) {
+	if (cad.Length() > 0) {
+		Byte pos = cad.Pos(" ");
+		if (pos == 0)
+			pos = cad.Length() + 1;
+		String pal = cad.SubString(1, pos - 1);
+		cad.Delete(1, pos);
+		Cardinal n = v->ColCount;
+		v->Cells[n - 1][0] = pal;
+		v->ColCount += 1;
+		cargar_frase(cad, v);
+	}
 }

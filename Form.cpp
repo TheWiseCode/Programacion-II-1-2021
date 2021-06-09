@@ -227,12 +227,38 @@ void __fastcall TForm1::Button3Click(TObject *Sender) {
 	Byte len = StrToInt(cad);
 	Vector1->ColCount = len;
 }
+
 // ---------------------------------------------------------------------------
-void __fastcall TForm1::Mayordeunacadena1Click(TObject *Sender)
-{
+void __fastcall TForm1::Mayordeunacadena1Click(TObject *Sender) {
 	String cad = InputBox("", "", "");
 	Cardinal may = numMayor(cad);
-    Edit6->Text = may;
+	Edit6->Text = may;
 }
-//---------------------------------------------------------------------------
+// ---------------------------------------------------------------------------
 
+void __fastcall TForm1::cargarfrase1Click(TObject *Sender) {
+	Vector->ColCount = 1;
+	String frase = InputBox("", "Frase:", "");
+	cargar_frase(frase, Vector);
+	Vector->ColCount -= 1;
+}
+
+// ---------------------------------------------------------------------------
+void __fastcall TForm1::Cargarcadena1Click(TObject *Sender) {
+	String frase = InputBox("", "Frase:", "");
+	cargar_cad(Matriz, frase, 1);
+}
+
+// ---------------------------------------------------------------------------
+void __fastcall TForm1::Eliminarelemento1Click(TObject *Sender) {
+	Cardinal z = StrToInt(InputBox("", "Numero:", ""));
+	eliminar_elemento(Vector, z, Vector->ColCount);
+}
+// ---------------------------------------------------------------------------
+
+void __fastcall TForm1::Dona1Click(TObject *Sender) {
+	Cardinal f = Matriz->RowCount;
+	Cardinal c = Matriz->ColCount;
+	dona(Matriz, f, c, 1);
+}
+// ---------------------------------------------------------------------------

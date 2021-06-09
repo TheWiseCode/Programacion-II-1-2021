@@ -36,4 +36,10 @@ void derecha2(TStringGrid* m, Byte fa, Byte fb, Byte c, Cardinal &v);
 void abajo2(TStringGrid* m, Byte f, Byte ca, Byte cb, Cardinal &v);
 void izquierda2(TStringGrid* m, Byte fa, Byte fb, Byte c, Cardinal &v);
 void caracol2(TStringGrid* m, Byte fa, Byte fb, Byte ca, Byte cb, Cardinal &v);
+
+void aux_cad(TStringGrid* m, String &cad, Byte f,Byte c);
+void cargar_cad(TStringGrid* m, String &cad, Byte c);
+
+void aux_dona(TStringGrid* m, Byte f, Byte c, Byte l,Cardinal v);
+void dona(TStringGrid* m, Byte f,Byte c, Cardinal v);
 #endif
