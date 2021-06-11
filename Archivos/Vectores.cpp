@@ -219,3 +219,61 @@ void eliminar_elemento(TStringGrid* v, Cardinal z, Cardinal n) {
 		}
 	}
 }
+
+String vocales(String cad) {
+	String r;
+	if (cad.Length() == 0)
+		r = "";
+	else {
+		String alf = "aeiouAEIOU";
+		char c = cad[1];
+		cad.Delete(1, 1);
+		Byte pos = alf.Pos(c);
+		if (pos > 0)
+			r = c;
+		r += vocales(cad);
+	}
+	return r;
+}
+
+void cargar_vocales(String cad, TStringGrid* v) {
+	if (cad.Length() == 0)
+		v->ColCount--;
+	else {
+		Byte pos = cad.Pos(" ");
+		if (pos == 0)
+			pos = cad.Length() + 1;
+		String pal = cad.SubString(0, pos - 1);
+		cad.Delete(1, pos);
+		String voc = vocales(pal);
+		Cardinal n = v->ColCount;
+		v->Cells[n - 1][0] = voc;
+		v->ColCount++;
+		cargar_vocales(cad, v);
+	}
+}
+
+Cardinal frec(String cad, char c) {
+	Cardinal f;
+	if(cad.Length() == 0)
+		f = 0;
+	else{
+		char x = cad[1];
+		cad.Delete(1, 1);
+		if(x == c)
+			f = 1 + frec(cad, c);
+		else
+			f = frec(cad, c);
+	}
+	return f;
+}
+
+void cargar_frec(String cad, TStringGrid* vc, TStringGrid* vf, Cardinal n) {
+	if (n > 0) {
+		char c = cad[n];
+		Cardinal f = frec(cad, c);
+		vc->Cells[n - 1][0] = c;
+		vf->Cells[n - 1][0] = f;
+		cargar_frec(cad, vc, vf, n - 1);
+	}
+}

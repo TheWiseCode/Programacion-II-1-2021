@@ -277,3 +277,25 @@ void dona(TStringGrid* m, Byte f, Byte c, Cardinal v) {
 		dona(m, f - 1, c - 1, v + 1);
 	}
 }
+
+void aux_frac(TStringGrid* m, Byte f, Byte c, Byte lim, Cardinal& num,
+	Cardinal& den) {
+	if (c > lim) {
+		if (den == 1)
+			m->Cells[c - 1][f - 1] = String(num);
+		else
+			m->Cells[c - 1][f - 1] = String(num) + "/" + String(den);
+		if (den > 1)
+			den /= 2;
+		else if (den == 1)
+			num *= 2;
+		aux_frac(m, f, c - 1, lim, num, den);
+	}
+}
+
+void cargar_frac(TStringGrid* m, Byte f, Byte c, Cardinal& num, Cardinal& den) {
+	if (f > 0) {
+		aux_frac(m, f, m->ColCount, c - 1, num, den);
+		cargar_frac(m, f - 1, c - 1, num, den);
+	}
+}

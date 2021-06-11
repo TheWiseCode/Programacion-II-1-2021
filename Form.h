@@ -72,6 +72,9 @@ __published: // IDE-managed Components
 	TMenuItem *Cargarcadena1;
 	TMenuItem *Eliminarelemento1;
 	TMenuItem *Dona1;
+	TMenuItem *Cargarvocales1;
+	TMenuItem *CargarFracciones1;
+	TMenuItem *Cargarfrecuencias1;
 
 	void __fastcall Literal1Click(TObject *Sender);
 	void __fastcall CantidadParantesdeImpar1Click(TObject *Sender);
@@ -106,6 +109,9 @@ __published: // IDE-managed Components
 	void __fastcall Cargarcadena1Click(TObject *Sender);
 	void __fastcall Eliminarelemento1Click(TObject *Sender);
 	void __fastcall Dona1Click(TObject *Sender);
+	void __fastcall Cargarvocales1Click(TObject *Sender);
+	void __fastcall CargarFracciones1Click(TObject *Sender);
+	void __fastcall Cargarfrecuencias1Click(TObject *Sender);
 
 private: // User declarations
 public: // User declarations

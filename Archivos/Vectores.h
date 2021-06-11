@@ -33,6 +33,12 @@ void insertar(TStringGrid* v2, TStringGrid* v1, Byte p);
 
 void eliminar(TStringGrid* v, Cardinal p);
 void eliminar_elemento(TStringGrid* v, Cardinal z, Cardinal n);
+
+String vocales(String cad);
+void cargar_vocales(String cad, TStringGrid* v);
+
+Cardinal frec(String cad, char c);
+void cargar_frec(String cad, TStringGrid* vc, TStringGrid* vf, Cardinal n);
 #endif
 
 

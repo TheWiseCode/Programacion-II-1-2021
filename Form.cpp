@@ -261,4 +261,28 @@ void __fastcall TForm1::Dona1Click(TObject *Sender) {
 	Cardinal c = Matriz->ColCount;
 	dona(Matriz, f, c, 1);
 }
+
+// ---------------------------------------------------------------------------
+void __fastcall TForm1::Cargarvocales1Click(TObject *Sender) {
+	Vector->ColCount = 1;
+	String cad = Edit3->Text;
+	cargar_vocales(cad, Vector);
+}
+// ---------------------------------------------------------------------------
+
+void __fastcall TForm1::CargarFracciones1Click(TObject *Sender) {
+	Cardinal f = Matriz->RowCount;
+	Cardinal c = Matriz->ColCount;
+	Cardinal num = 1;
+	Cardinal den = 64;
+	cargar_frac(Matriz, f, c, num, den);
+}
+
+// ---------------------------------------------------------------------------
+void __fastcall TForm1::Cargarfrecuencias1Click(TObject *Sender) {
+	String cad = Edit3->Text;
+	Vector->ColCount = cad.Length();
+	Vector1->ColCount = cad.Length();
+	cargar_frec(cad, Vector, Vector1, cad.Length());
+}
 // ---------------------------------------------------------------------------

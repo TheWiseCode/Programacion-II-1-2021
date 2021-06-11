@@ -19,7 +19,7 @@ object Form1: TForm1
     Top = 0
     Width = 755
     Height = 445
-    ActivePage = TabSheet5
+    ActivePage = TabSheet4
     Align = alClient
     TabOrder = 0
     object TabSheet1: TTabSheet
@@ -117,7 +117,7 @@ object Form1: TForm1
       object Edit3: TEdit
         Left = 3
         Top = 112
-        Width = 121
+        Width = 202
         Height = 24
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -300,6 +300,14 @@ object Form1: TForm1
         Caption = 'Eliminar elemento'
         OnClick = Eliminarelemento1Click
       end
+      object Cargarvocales1: TMenuItem
+        Caption = 'Cargar vocales'
+        OnClick = Cargarvocales1Click
+      end
+      object Cargarfrecuencias1: TMenuItem
+        Caption = 'Cargar frecuencias'
+        OnClick = Cargarfrecuencias1Click
+      end
     end
     object Matrices: TMenuItem
       Caption = 'Matrices'
@@ -341,6 +349,10 @@ object Form1: TForm1
       object Dona1: TMenuItem
         Caption = 'Dona'
         OnClick = Dona1Click
+      end
+      object CargarFracciones1: TMenuItem
+        Caption = 'Cargar Fracciones'
+        OnClick = CargarFracciones1Click
       end
     end
   end
